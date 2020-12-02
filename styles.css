@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+* {
+    margin: 0;
+}
+
+:root {
+    --primary-color: #eded07;
+    --background-color: peachpuff;
+
+}
+
+body {
+    font-family: 'kalam', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+nav {
+    background-color: var(--primary-color);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav .heading {
+    padding-top: 1.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    height: 100vh;
+
+
+}
+
+.txt-input {
+    border: black solid 2px;
+    height: 10rem;
+    margin-left: -0.25rem;
+    resize: none;
+    outline: none;
+    font-size: x-large;
+    font-family: "kalam", cursive;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: 0px 0px 0px black;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.translate-btn {
+    background-color: var(--primary-color);
+    font-family: "kalam", cursive;
+    font-size: large;
+    margin-top: -1rem;
+    border: none;
+    outline: none;
+    height: 5rem;
+    width: 100%;
+}
+
+.output-pointer {
+    text-align: center;
+    margin-top: -1.3rem;
+}
+
+.output {
+    border: black solid 2px;
+    height: 5rem;
+    font-size: x-large;
+    font-family: "kalam", cursive;
+    text-align: center;
+    vertical-align: middle;
+    color: transparent;
+    text-shadow: 0px 0px 0px black;
+    margin-top: -4.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background-color: white;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    margin: 0;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer h3 {
+    text-align: center;
+}
+
+.footer h4 {
+    text-align: center;
+}
+
+.footer h6 {
+    text-align: center;
+}
+
+@media (max-width: 425px) {
+    .container {
+        width: 95%;
+    }
+
+    .txt-input {
+        height: 5rem;
+        width: 100%;
+        margin-top: -7rem;
+        vertical-align: middle;
+    }
+
+    .translate-btn {
+        margin-top: -7rem;
+    }
+
+    .output-pointer {
+        margin-top: -8rem;
+    }
+
+    .output {
+        margin-top: -9rem;
+    }
+
+    .footer {
+        margin-top: -7rem;
+    }
+}
